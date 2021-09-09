@@ -15,6 +15,9 @@
 		2E8863D326E81973008D319A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8863D126E81973008D319A /* LaunchScreen.storyboard */; };
 		2E8863DE26E81973008D319A /* MSL_Assignment_OneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8863DD26E81973008D319A /* MSL_Assignment_OneTests.swift */; };
 		2E8863E926E81973008D319A /* MSL_Assignment_OneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8863E826E81973008D319A /* MSL_Assignment_OneUITests.swift */; };
+		2E8863F926EAA303008D319A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8863F826EAA303008D319A /* TableViewController.swift */; };
+		2E88640126EAA519008D319A /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E88640026EAA519008D319A /* DataModel.m */; };
+		2E88640326EAADD5008D319A /* Names.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E88640226EAADD5008D319A /* Names.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,11 @@
 		2E8863E426E81973008D319A /* MSL-Assignment-OneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSL-Assignment-OneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8863E826E81973008D319A /* MSL_Assignment_OneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSL_Assignment_OneUITests.swift; sourceTree = "<group>"; };
 		2E8863EA26E81973008D319A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8863F826EAA303008D319A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2E8863FA26EAA4A9008D319A /* MSL-Assignment-One-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSL-Assignment-One-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E8863FF26EAA519008D319A /* DataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		2E88640026EAA519008D319A /* DataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		2E88640226EAADD5008D319A /* Names.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Names.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +111,14 @@
 				2E8863C826E81972008D319A /* SceneDelegate.swift */,
 				2E8863CA26E81972008D319A /* ViewController.swift */,
 				2E8863CC26E81972008D319A /* Main.storyboard */,
+				2E8863F826EAA303008D319A /* TableViewController.swift */,
+				2E8863FF26EAA519008D319A /* DataModel.h */,
+				2E88640026EAA519008D319A /* DataModel.m */,
+				2E88640226EAADD5008D319A /* Names.plist */,
 				2E8863CF26E81973008D319A /* Assets.xcassets */,
 				2E8863D126E81973008D319A /* LaunchScreen.storyboard */,
 				2E8863D426E81973008D319A /* Info.plist */,
+				2E8863FA26EAA4A9008D319A /* MSL-Assignment-One-Bridging-Header.h */,
 			);
 			path = "MSL-Assignment-One";
 			sourceTree = "<group>";
@@ -195,6 +208,7 @@
 				TargetAttributes = {
 					2E8863C226E81972008D319A = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					2E8863D826E81973008D319A = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8863D326E81973008D319A /* LaunchScreen.storyboard in Resources */,
+				2E88640326EAADD5008D319A /* Names.plist in Resources */,
 				2E8863D026E81973008D319A /* Assets.xcassets in Resources */,
 				2E8863CE26E81972008D319A /* Main.storyboard in Resources */,
 			);
@@ -259,8 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8863CB26E81972008D319A /* ViewController.swift in Sources */,
+				2E88640126EAA519008D319A /* DataModel.m in Sources */,
 				2E8863C726E81972008D319A /* AppDelegate.swift in Sources */,
 				2E8863C926E81972008D319A /* SceneDelegate.swift in Sources */,
+				2E8863F926EAA303008D319A /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
 				INFOPLIST_FILE = "MSL-Assignment-One/Info.plist";
@@ -445,6 +463,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "SMU.MSL-Assignment-One";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MSL-Assignment-One/MSL-Assignment-One-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
 				INFOPLIST_FILE = "MSL-Assignment-One/Info.plist";
@@ -464,6 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "SMU.MSL-Assignment-One";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MSL-Assignment-One/MSL-Assignment-One-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
