@@ -22,6 +22,19 @@ class ViewController: UIViewController {
         stepper.minimumValue = 15
         stepper.maximumValue = 30
         
+        var time = 0
+        
+        let timer = Timer.scheduledTimer(withTimeInterval: 4.0, repeats: true) { timer in
+            
+            if(time % 2 == 0){
+            self.entryText.text = "Welcome to Smash App!"
+                time+=1
+            }else{
+                self.entryText.text = "Press Start to Contiune"
+                time+=1
+            }
+        }
+
         
         
     }
