@@ -26,7 +26,7 @@
                                     <segue destination="lBP-tA-q3h" kind="show" id="kq9-3T-Cv3"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="687-GX-417">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmashBall.svg" translatesAutoresizingMaskIntoConstraints="NO" id="687-GX-417">
                                 <rect key="frame" x="87" y="159" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -224,6 +224,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SmashBall.svg" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
