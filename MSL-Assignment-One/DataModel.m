@@ -56,10 +56,9 @@
 -(NSMutableDictionary*)charDict {
     if(!_charDict) {
         _charDict = [[NSMutableDictionary alloc] init];
-        
-        for(id name in _charNames) {
-            [_charDict setValue:[UIImage imageNamed:name] forKey:name];
-        }
+//        for(id name in _charNames) {
+//            [_charDict setValue:[UIImage imageNamed:name] forKey:name];
+//        }
     }
     return _charDict;
 }
@@ -100,14 +99,21 @@
 -(UIImage*)getImageWithName:(NSString*)name {
     UIImage* image = nil;
     
-    if([_charDict objectForKey:name])
-        image = _charDict[name];
-    else if ([_stageDict objectForKey:name])
-        image = _stageDict[name];
-    else
-        image = _musicDict[name];
+    
+    image = [UIImage imageNamed:name];
+    //image = _charDict[name];
+//    if([_charDict objectForKey:name])
+//        image = _charDict[name];
+//    else if ([_stageDict objectForKey:name])
+//        image = _stageDict[name];
+//    else
+//        image = _musicDict[name];
     
     return image;
+}
+
+-(NSArray*)getAllChars {
+    return _charNames;
 }
 
 -(UIImage*)getCharWithIndex:(NSInteger)index {
@@ -128,18 +134,20 @@
     return _musicDict[name];
 }
 
--(NSInteger)numberOfChars { return _charNames.count; }
--(NSInteger)numberOfStages { return _stageNames.count; }
--(NSInteger)numberOfMusic { return _musicNames.count; }
+-(NSInteger)numberOfChars { return self.charNames.count; }
+-(NSInteger)numberOfStages { return self.stageNames.count; }
+-(NSInteger)numberOfMusic { return self.musicNames.count; }
 
 -(NSString*)getCharNameForIndex:(NSInteger)index {
-    return _charNames[index];
+    return self.charNames[index]; //_charNames[index];
 }
 -(NSString*)getStageNameForIndex:(NSInteger)index {
-    return _stageNames[index];
+    return self.stageNames[index]; //_stageNames[index];
 }
 -(NSString*)getMusicNameForIndex:(NSInteger)index {
-    return _musicNames[index];
+    return self.musicNames[index]; //_musicNames[index];
 }
+
+
 
 @end

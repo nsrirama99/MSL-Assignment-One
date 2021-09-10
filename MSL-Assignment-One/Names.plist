@@ -17,8 +17,10 @@
 	<key>Characters</key>
 	<array>
 		<string>luigi</string>
-		<string>cloud</string>
-		<string>fox</string>
+		<string>thefed</string>
+		<string>luigi-melee</string>
+		<string>cloud-ult</string>
+		<string>pikachu</string>
 	</array>
 </dict>
 </plist>

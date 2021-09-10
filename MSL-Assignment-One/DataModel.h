@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(UIImage*)getImageWithName:(NSString*)name;
 
+-(NSArray*)getAllChars;
+
 -(UIImage*)getCharWithIndex:(NSInteger)index;
 -(UIImage*)getStageWithIndex:(NSInteger)index;
 -(UIImage*)getMusicWithIndex:(NSInteger)index;
