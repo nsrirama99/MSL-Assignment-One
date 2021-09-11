@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03E1B0B526EC3A73002063A4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1B0B226EC3A73002063A4 /* CollectionViewController.swift */; };
+		03E1B0B626EC3A73002063A4 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1B0B326EC3A73002063A4 /* SegmentViewController.swift */; };
+		03E1B0B726EC3A73002063A4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1B0B426EC3A73002063A4 /* CollectionViewCell.swift */; };
 		1E790B5B26EC24EE0049CB7B /* viewControllerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E790B5A26EC24EE0049CB7B /* viewControllerModal.swift */; };
 		2E8863C726E81972008D319A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8863C626E81972008D319A /* AppDelegate.swift */; };
 		2E8863C926E81972008D319A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8863C826E81972008D319A /* SceneDelegate.swift */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E1B0B226EC3A73002063A4 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		03E1B0B326EC3A73002063A4 /* SegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
+		03E1B0B426EC3A73002063A4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1E790B5A26EC24EE0049CB7B /* viewControllerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerModal.swift; sourceTree = "<group>"; };
 		2E8863C326E81972008D319A /* MSL-Assignment-One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MSL-Assignment-One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8863C626E81972008D319A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 				2E8863D426E81973008D319A /* Info.plist */,
 				2E8863FA26EAA4A9008D319A /* MSL-Assignment-One-Bridging-Header.h */,
 				1E790B5A26EC24EE0049CB7B /* viewControllerModal.swift */,
+				03E1B0B426EC3A73002063A4 /* CollectionViewCell.swift */,
+				03E1B0B226EC3A73002063A4 /* CollectionViewController.swift */,
+				03E1B0B326EC3A73002063A4 /* SegmentViewController.swift */,
 			);
 			path = "MSL-Assignment-One";
 			sourceTree = "<group>";
@@ -279,10 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E1B0B726EC3A73002063A4 /* CollectionViewCell.swift in Sources */,
 				1E790B5B26EC24EE0049CB7B /* viewControllerModal.swift in Sources */,
+				03E1B0B626EC3A73002063A4 /* SegmentViewController.swift in Sources */,
 				2E88640526EACE2E008D319A /* CharacterViewController.swift in Sources */,
 				2E8863CB26E81972008D319A /* ViewController.swift in Sources */,
 				2E88640126EAA519008D319A /* DataModel.m in Sources */,
+				03E1B0B526EC3A73002063A4 /* CollectionViewController.swift in Sources */,
 				2E8863C726E81972008D319A /* AppDelegate.swift in Sources */,
 				2E8863C926E81972008D319A /* SceneDelegate.swift in Sources */,
 				2E8863F926EAA303008D319A /* TableViewController.swift in Sources */,
