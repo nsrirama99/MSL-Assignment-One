@@ -144,8 +144,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3fQ-89-2Y7">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3fQ-89-2Y7">
                                 <rect key="frame" x="20" y="88" width="374" height="456"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Ych-00-tG4"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="aCB-rG-BmW"/>
                             </scrollView>
@@ -167,8 +168,6 @@
                             <constraint firstItem="5SZ-xE-HsF" firstAttribute="firstBaseline" secondItem="0Cl-iM-JJb" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="SU6-FB-wC8"/>
                             <constraint firstItem="0Cl-iM-JJb" firstAttribute="leading" secondItem="YCl-Hm-pt9" secondAttribute="leading" constant="122" id="XuI-zC-3it"/>
                             <constraint firstItem="5SZ-xE-HsF" firstAttribute="centerX" secondItem="YCl-Hm-pt9" secondAttribute="centerX" id="dKZ-9h-NAd"/>
-                            <constraint firstItem="0Cl-iM-JJb" firstAttribute="top" secondItem="3fQ-89-2Y7" secondAttribute="bottom" constant="64" id="dcx-Bg-eas"/>
-                            <constraint firstItem="0Cl-iM-JJb" firstAttribute="centerX" secondItem="3fQ-89-2Y7" secondAttribute="centerX" id="vvK-m3-kRq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qCx-WC-igS"/>

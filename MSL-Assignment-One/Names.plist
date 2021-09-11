@@ -10,14 +10,13 @@
 	</array>
 	<key>Stages</key>
 	<array>
-		<string>ps2</string>
+		<string>great cave offensive</string>
 		<string>fd</string>
 		<string>battlefield</string>
 	</array>
 	<key>Characters</key>
 	<array>
 		<string>luigi</string>
-		<string>thefed</string>
 		<string>luigi-melee</string>
 		<string>cloud-ult</string>
 		<string>pikachu</string>

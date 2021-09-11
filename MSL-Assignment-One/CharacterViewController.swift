@@ -14,6 +14,7 @@ class CharacterViewController: UIViewController, UIScrollViewDelegate, UIPickerV
     @IBOutlet weak var charViewPicker: UIPickerView!
     
     var displayImageName = "Pika_Ult"
+    var row = 0
     
     lazy var pickerData = {
         return self.dataModel.getAllChars()
@@ -32,7 +33,6 @@ class CharacterViewController: UIViewController, UIScrollViewDelegate, UIPickerV
 
         // Do any additional setup after loading the view.
         if let size = self.imageView?.image?.size {
-            print("inside if")
             self.scrollView.addSubview(self.imageView!)
             self.scrollView.contentSize = size
             self.scrollView.minimumZoomScale = 0.1
@@ -46,6 +46,8 @@ class CharacterViewController: UIViewController, UIScrollViewDelegate, UIPickerV
         
         self.charViewPicker.delegate = self
         self.charViewPicker.dataSource = self
+        
+        charViewPicker.selectRow(row, inComponent: 0, animated: false)
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
@@ -53,8 +55,8 @@ class CharacterViewController: UIViewController, UIScrollViewDelegate, UIPickerV
     }
     
     @IBAction func sliderChanged(_ sender: UISlider) {
-        print(CGFloat(sender.value))
-        //scrollView.zoomScale = CGFloat(sender.value)
+        //print(CGFloat(sender.value))
+        scrollView.zoomScale = CGFloat(sender.value)
     }
     
     
@@ -75,9 +77,9 @@ class CharacterViewController: UIViewController, UIScrollViewDelegate, UIPickerV
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        if let name = pickerData[row] as? String {
-//            imageView?.image? = self.dataModel.getImageWithName(name)
-//        }
+        if let name = pickerData[row] as? String {
+            imageView?.image? = self.dataModel.getImageWithName(name)
+        }
     }
     
     /*

@@ -86,6 +86,7 @@ class TableViewController: UITableViewController {
            let cell = sender as? UITableViewCell,
            let name = cell.textLabel?.text {
                 vc.displayImageName = name
+                vc.row = tableView.indexPathForSelectedRow!.row
         }
         
         if let vc = segue.destination as? SegmentViewController,
