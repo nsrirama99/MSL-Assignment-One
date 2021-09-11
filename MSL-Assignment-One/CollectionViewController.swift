@@ -7,7 +7,8 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier1 = "yeah"
+private let reuseIdentifier2 = "same"
 
 class CollectionViewController: UICollectionViewController {
 
@@ -18,7 +19,8 @@ class CollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier1)
+        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier2)
 
         // Do any additional setup after loading the view.
     }
@@ -34,24 +36,42 @@ class CollectionViewController: UICollectionViewController {
     */
 
     // MARK: UICollectionViewDataSource
+    
+    lazy var dataModel = {
+        DataModel.sharedInstance()
+    }()
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        if (section == 0) {
+            return dataModel.numberOfChars()
+        }
+        else {
+            return dataModel.numberOfStages()
+        }
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
-        return cell
+        if (indexPath.section == 0) {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier1, for: indexPath) as? CollectionViewCell
+            if let name = self.dataModel.getCharName(for: indexPath.row) as? String{
+                cell!.imageView.image = self.dataModel.getImageWithName(name)
+            }
+            return cell!
+        }
+        else{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier1, for: indexPath) as? CollectionViewCell
+            if let name = self.dataModel.getStageName(for: indexPath.row) as? String{
+                cell!.imageView.image = self.dataModel.getImageWithName(name)
+            }
+            return cell!
+        }
     }
 
     // MARK: UICollectionViewDelegate
