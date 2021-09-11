@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E790B5B26EC24EE0049CB7B /* viewControllerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E790B5A26EC24EE0049CB7B /* viewControllerModal.swift */; };
 		2E8863C726E81972008D319A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8863C626E81972008D319A /* AppDelegate.swift */; };
 		2E8863C926E81972008D319A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8863C826E81972008D319A /* SceneDelegate.swift */; };
 		2E8863CB26E81972008D319A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8863CA26E81972008D319A /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E790B5A26EC24EE0049CB7B /* viewControllerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerModal.swift; sourceTree = "<group>"; };
 		2E8863C326E81972008D319A /* MSL-Assignment-One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MSL-Assignment-One.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8863C626E81972008D319A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E8863C826E81972008D319A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				2E8863D126E81973008D319A /* LaunchScreen.storyboard */,
 				2E8863D426E81973008D319A /* Info.plist */,
 				2E8863FA26EAA4A9008D319A /* MSL-Assignment-One-Bridging-Header.h */,
+				1E790B5A26EC24EE0049CB7B /* viewControllerModal.swift */,
 			);
 			path = "MSL-Assignment-One";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E790B5B26EC24EE0049CB7B /* viewControllerModal.swift in Sources */,
 				2E88640526EACE2E008D319A /* CharacterViewController.swift in Sources */,
 				2E8863CB26E81972008D319A /* ViewController.swift in Sources */,
 				2E88640126EAA519008D319A /* DataModel.m in Sources */,

@@ -13,6 +13,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var stepper: UIStepper!
     
+    @IBOutlet weak var modalButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
         
         
     }
+    
 
     
     
@@ -47,6 +50,13 @@ class ViewController: UIViewController {
         
         let stepVal = sender.value
         entryText.font = entryText.font.withSize(CGFloat(stepVal))
+    }
+    @IBAction func modalView(_ sender: Any) {
+        
+        let viewControllerModal = storyboard?.instantiateViewController(withIdentifier: "viewControllerModal") as! viewControllerModal
+        
+        present(viewControllerModal,animated: true, completion: nil)
+        
     }
     
 }

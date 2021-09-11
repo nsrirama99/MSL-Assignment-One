@@ -46,12 +46,21 @@
                                     <segue destination="lBP-tA-q3h" kind="show" id="kq9-3T-Cv3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cx-iE-gXO">
+                                <rect key="frame" x="160" y="784" width="92" height="30"/>
+                                <state key="normal" title="Modal Button"/>
+                                <connections>
+                                    <action selector="modalView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4MZ-do-n31"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="02G-k1-qGc" firstAttribute="centerX" secondItem="687-GX-417" secondAttribute="centerX" id="3aD-nk-T6C"/>
                             <constraint firstItem="Z3v-fp-8vj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5vx-VU-JW6"/>
+                            <constraint firstItem="1cx-iE-gXO" firstAttribute="leading" secondItem="Z3v-fp-8vj" secondAttribute="leading" id="Eaq-yh-35A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1cx-iE-gXO" secondAttribute="bottom" constant="48" id="Mw5-xZ-FTj"/>
                             <constraint firstItem="cdh-Gz-ibY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U0q-VJ-2Iu"/>
                             <constraint firstItem="Z3v-fp-8vj" firstAttribute="top" secondItem="cdh-Gz-ibY" secondAttribute="bottom" constant="35" id="YRp-4I-8lz"/>
                             <constraint firstItem="02G-k1-qGc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ajP-qW-ekX"/>
@@ -65,6 +74,7 @@
                     <navigationItem key="navigationItem" id="P5k-yN-wQw"/>
                     <connections>
                         <outlet property="entryText" destination="cdh-Gz-ibY" id="5nK-GE-Rve"/>
+                        <outlet property="modalButton" destination="1cx-iE-gXO" id="8Th-mn-O5B"/>
                         <outlet property="stepper" destination="Z3v-fp-8vj" id="0YF-lX-cns"/>
                     </connections>
                 </viewController>
@@ -256,6 +266,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kzh-NF-Hsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1196" y="43"/>
+        </scene>
+        <!--View Controller Modal-->
+        <scene sceneID="OZZ-TP-o8I">
+            <objects>
+                <viewController storyboardIdentifier="viewControllerModal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sXG-m0-2BL" customClass="viewControllerModal" customModule="MSL_Assignment_One" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wpb-As-GXc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYy-PK-ZwL">
+                                <rect key="frame" x="324" y="81" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeHandler:" destination="sXG-m0-2BL" eventType="touchUpInside" id="AZ2-uT-vRU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oxX-ZH-A4W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gw-cc-WAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-301" y="747"/>
         </scene>
     </scenes>
     <resources>
