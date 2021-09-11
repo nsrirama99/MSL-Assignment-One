@@ -88,6 +88,12 @@ class TableViewController: UITableViewController {
                 vc.displayImageName = name
         }
         
+        if let vc = segue.destination as? SegmentViewController,
+           let cell = sender as? UITableViewCell,
+           let name = cell.textLabel?.text {
+                vc.displayImageName = name
+        }
+        
     }
     
 
