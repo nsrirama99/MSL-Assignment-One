@@ -20,10 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(NSArray*)getAllChars;
 
--(UIImage*)getCharWithIndex:(NSInteger)index;
--(UIImage*)getStageWithIndex:(NSInteger)index;
--(UIImage*)getMusicWithIndex:(NSInteger)index;
-
 -(NSInteger)numberOfChars;
 -(NSInteger)numberOfStages;
 -(NSInteger)numberOfMusic;
@@ -36,10 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray* charNames;
 @property (nonatomic, strong) NSArray* stageNames;
 @property (nonatomic, strong) NSArray* musicNames;
-
-@property (nonatomic, strong) NSMutableDictionary* charDict;
-@property (nonatomic, strong) NSMutableDictionary* stageDict;
-@property (nonatomic, strong) NSMutableDictionary* musicDict;
 
 @end
 
